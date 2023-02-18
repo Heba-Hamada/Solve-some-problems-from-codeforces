@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class TheatreSquare {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        long n = in.nextLong();
+        long m = in.nextLong();
+        long a = in.nextLong();
+        long countst = n / a;
+        long countsw = m / a;
+        if (n % a != 0) {
+
+            countst += 1;
+
+        }
+        if (m % a != 0) {
+
+            countsw += 1;
+
+        }
+
+        long sum = countst * countsw;
+        System.out.println(sum);
+    }
+}
